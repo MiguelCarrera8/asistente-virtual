@@ -15,7 +15,7 @@ class LLM():
             model="gpt-3.5-turbo-0613",
             messages=[
                     #Si no te gusta que te hable feo, cambia aqui su descripcion
-                    {"role": "system", "content": "Eres un asistente malhablado"},
+                    {"role": "system", "content": "Eres un asistente estilo Jarvis de Iron Man"},
                     {"role": "user", "content": text},
             ], functions=[
                 {
@@ -102,7 +102,7 @@ class LLM():
             model="gpt-3.5-turbo-0613",
             messages=[
                 #Aqui tambien puedes cambiar como se comporta
-                {"role": "system", "content": "Eres un asistente malhablado"},
+                {"role": "system", "content": "Eres un asistente estilo Jarvis de Iron Man"},
                 {"role": "user", "content": text},
                 message,
                 {
