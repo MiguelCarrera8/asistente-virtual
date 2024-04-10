@@ -62,11 +62,15 @@ function doPreview() {
             method: "POST",
             body: fd,
         })
-            .then((response) => response.json())
+            .then((response) => {
+                console.log(response);
+                response.json()
+            })
             .then(audioResponseHandler)
             .catch(err => {
                 //Puedes hacer algo más inteligente aquí
                 console.log("Oops: Ocurrió un error", err);
+                document.getElementById('result').innerHTML = err;
             });
     }
 }
